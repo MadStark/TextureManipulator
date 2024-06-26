@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=3 uid="uid://mfy588ecs0j1"]
+
+[ext_resource type="Script" path="res://Scripts/Nodes/InvertNode.gd" id="1_ko8pw"]
+
+[node name="GraphNode" type="GraphNode"]
+offset_right = 126.0
+offset_bottom = 90.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+title = "Invert"
+slot/0/left_enabled = true
+slot/0/left_type = 0
+slot/0/left_color = Color(1, 1, 1, 1)
+slot/0/left_icon = null
+slot/0/right_enabled = true
+slot/0/right_type = 0
+slot/0/right_color = Color(1, 1, 1, 1)
+slot/0/right_icon = null
+slot/0/draw_stylebox = true
+script = ExtResource("1_ko8pw")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "In"
+
+[node name="Control" type="Control" parent="HBoxContainer"]
+custom_minimum_size = Vector2(2.08165e-12, 35)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label2" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "Out"

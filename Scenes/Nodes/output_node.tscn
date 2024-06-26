@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://dg7gx4f26f4g1"]
+
+[node name="GraphNode" type="GraphNode"]
+offset_right = 120.0
+offset_bottom = 153.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+title = "Output"
+slot/0/left_enabled = true
+slot/0/left_type = 0
+slot/0/left_color = Color(1, 1, 1, 1)
+slot/0/left_icon = null
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color(1, 1, 1, 1)
+slot/0/right_icon = null
+slot/0/draw_stylebox = true
+slot/1/left_enabled = true
+slot/1/left_type = 0
+slot/1/left_color = Color(1, 1, 1, 1)
+slot/1/left_icon = null
+slot/1/right_enabled = false
+slot/1/right_type = 0
+slot/1/right_color = Color(1, 1, 1, 1)
+slot/1/right_icon = null
+slot/1/draw_stylebox = true
+slot/2/left_enabled = true
+slot/2/left_type = 0
+slot/2/left_color = Color(1, 1, 1, 1)
+slot/2/left_icon = null
+slot/2/right_enabled = false
+slot/2/right_type = 0
+slot/2/right_color = Color(1, 1, 1, 1)
+slot/2/right_icon = null
+slot/2/draw_stylebox = true
+slot/3/left_enabled = true
+slot/3/left_type = 0
+slot/3/left_color = Color(1, 1, 1, 1)
+slot/3/left_icon = null
+slot/3/right_enabled = false
+slot/3/right_type = 0
+slot/3/right_color = Color(1, 1, 1, 1)
+slot/3/right_icon = null
+slot/3/draw_stylebox = true
+
+[node name="LabelR" type="Label" parent="."]
+layout_mode = 2
+text = "R"
+
+[node name="LabelG" type="Label" parent="."]
+layout_mode = 2
+text = "G"
+
+[node name="LabelB" type="Label" parent="."]
+layout_mode = 2
+text = "B"
+
+[node name="LabelA" type="Label" parent="."]
+layout_mode = 2
+text = "A"

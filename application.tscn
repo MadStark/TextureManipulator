@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqo2vtw2xdxb5"]
+
+[ext_resource type="Script" path="res://Scripts/Application.gd" id="1_wgy5h"]
+[ext_resource type="PackedScene" uid="uid://xgxdoj1p7crd" path="res://Scenes/graph_editor.tscn" id="2_g4g12"]
+
+[node name="Application" type="Node"]
+script = ExtResource("1_wgy5h")
+
+[node name="Graph" parent="." instance=ExtResource("2_g4g12")]
+anchors_preset = -1
+
+[node name="FileDialog" type="FileDialog" parent="."]
+initial_position = 2
+size = Vector2i(744, 489)
+access = 2
+use_native_dialog = true
+
+[connection signal="file_selected" from="FileDialog" to="." method="_on_file_dialog_file_selected"]

@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://3qsfjx1ncrwr"]
+
+[ext_resource type="Script" path="res://Scripts/Nodes/FloatNode.gd" id="1_0r5xr"]
+
+[node name="GraphNode" type="GraphNode"]
+offset_right = 178.0
+offset_bottom = 90.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+title = "Float"
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color(1, 1, 1, 1)
+slot/0/left_icon = null
+slot/0/right_enabled = true
+slot/0/right_type = 0
+slot/0/right_color = Color(1, 1, 1, 1)
+slot/0/right_icon = null
+slot/0/draw_stylebox = true
+script = ExtResource("1_0r5xr")
+
+[node name="InputField" type="LineEdit" parent="."]
+layout_mode = 2
+text = "1.0"
+
+[connection signal="text_submitted" from="InputField" to="." method="_on_input_field_text_submitted"]
